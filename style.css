@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(243, 206, 244);
+}
+
+
+body, button, input {
+    font-family: "Sedan SC", serif;   
+}
+
+/* La clase container estará centrada, que es el contenedor "padre" de todo el formulario */
+.container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+
+.crud_title {
+    text-align: center;
+    color: #ad026edd;
+}
+
+.crud_form{
+   
+    display: flex;
+    margin: 15px 0;   
+}
+
+/* Tamaño de fuente de las entradas a 1rem unidad relativa, equivale al tamaño por defecto del navegador, 2rem = 18px * 2  */
+.form_input {
+    border: solid yellow;
+    flex: 1;
+    padding: 10px;
+    margin-right: 15px;
+    font-size: 1rem;
+}
+
+/* Estilos al botón "padre" o en general  */
+.button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+/* efecto al pasar el mouse sobre el botón, crece 1.2  */
+.button:hover{
+    transform: scale(1.3);
+}
+
+/* Estilos especificos a "botón "primary" pero conserva propiedades del botón general "padre" */
+.button--primary {
+    background-color: rgb(157, 245, 186);
+}
+
+/* Estilos especificos a "botón "secundary" que se crean automaticamente en la celda "acciones"*/
+.button--secundary {
+    background-color: #483703;
+}
+
+/* Estilos especificos a "botón "terciary" que se crean automaticamente en la celda "acciones"*/
+.button--terciary {
+    background-color: #dc3545;
+    color: #f0f0f0;
+}
+
+/* Estilos a la tabla del Crud */
+.crudtable{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table_header, .table_body td {
+    border: 1px solid #cccccc;
+    padding: 5px;
+}
+
+.table_header {
+    background-color: #cf839c;
+    color: wh;
+    border: solid ;
+    border-color: rgba(226, 78, 14, 0.438);
+}
+
+/* Estilos para el tercer elemento de la tablebody lo que serán los botones de la celda "acciones" */
+.table_body td:nth-child(3){
+    display: flex;
+    justify-content: space-around;
+}

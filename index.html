@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="1.js"></script>
+ 
+</head>
+<body>
+    <main class="container">
+        <section class="crud">
+            <h1 class="crud_title">Registro de Usuarios</h1>
+    
+            
+            <form id="formRegister" class="crud_form">
+                <input type="text" placeholder="Nombre" id="nameinput" class="form_input">
+                <input type="number" placeholder="id" id="id" class="form_input">
+    
+           
+                <button type="submit" id="submitbutton" class="button button--primary" >Agregar</button>
+            </form>
+    
+            
+            <table class="crudtable">
+            <thead>
+                <tr>
+                    <th class="table_header">Nombre</th>
+                    <th class="table_header">Id</th>
+                    <th class="table_header">Date</th>
+                    <th class="table_header">Acciones</th>
+                </tr>
+            </thead>
+    
+          
+            <tbody id="tablebody" class="table_body">
+            </tbody>
+            </table>
+        </section>
+       </main>
+        
+       
+</body>
+</html>
